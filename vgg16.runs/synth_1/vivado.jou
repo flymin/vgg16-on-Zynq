@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jan 15 22:28:51 2019
+# Process ID: 31994
+# Current directory: /home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1
+# Command line: vivado -log wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
+# Log file: /home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/wrapper.vds
+# Journal file: /home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source wrapper.tcl -notrace

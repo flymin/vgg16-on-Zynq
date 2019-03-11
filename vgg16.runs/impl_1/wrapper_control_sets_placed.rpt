@@ -1,0 +1,91 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Tue Jan 15 22:37:09 2019
+| Host         : eda-srv running 64-bit Red Hat Enterprise Linux Server release 6.6 (Santiago)
+| Command      : report_control_sets -verbose -file wrapper_control_sets_placed.rpt
+| Design       : wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      5 |            5 |
+|      6 |            2 |
+|      7 |            1 |
+|      8 |            4 |
+|     10 |            2 |
+|     11 |            1 |
+|     14 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              14 |            8 |
+| Yes          | No                    | No                     |              28 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              96 |           37 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------+-----------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+-----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | in_weight/onboard                | rst_IBUF                          |                1 |              1 |
+|  clk_IBUF_BUFG | Net/pool/Outaddr[21]_i_1_n_0     | rst_IBUF                          |                2 |              5 |
+|  clk_IBUF_BUFG | Net/pool/Inaddr[21]_i_1_n_0      | rst_IBUF                          |                1 |              5 |
+|  clk_IBUF_BUFG | out_ram/onboard                  | rst_IBUF                          |                1 |              5 |
+|  clk_IBUF_BUFG | in_ram/onboard_0                 | rst_IBUF                          |                1 |              5 |
+|  clk_IBUF_BUFG | Net/dl/data_addr[21]_i_1_n_0     | rst_IBUF                          |                2 |              5 |
+|  clk_IBUF_BUFG | Net/dl/row_counter[5]_i_1_n_0    | Net/dl/i___4_n_0                  |                2 |              6 |
+|  clk_IBUF_BUFG | Net/dl/channel_counter           | Net/dl/channel_counter[7]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG | Net/pool/row                     | Net/pool/channel_count[7]_i_1_n_0 |                2 |              7 |
+|  clk_IBUF_BUFG | Net/pool/row_count[7]_i_1_n_0    |                                   |                4 |              8 |
+|  clk_IBUF_BUFG | Net/conv_FSM/times[7]_i_1__0_n_0 | rst_IBUF                          |                4 |              8 |
+|  clk_IBUF_BUFG | Net/FC_FSM/times[7]_i_1_n_0      | rst_IBUF                          |                3 |              8 |
+|  clk_IBUF_BUFG | Net/FC_FSM/col[7]_i_1_n_0        | rst_IBUF                          |                3 |              8 |
+|  clk_IBUF_BUFG | out_ram/block[4]_i_1__0_n_0      |                                   |                3 |             10 |
+|  clk_IBUF_BUFG | in_ram/block[4]_i_1_n_0          |                                   |                4 |             10 |
+|  clk_IBUF_BUFG | Net/conv_FSM/channel[10]_i_1_n_0 | rst_IBUF                          |                5 |             11 |
+|  clk_IBUF_BUFG |                                  | rst_IBUF                          |                8 |             14 |
+|  clk_IBUF_BUFG | Net/conv_FSM/pos[15]_i_1_n_0     | rst_IBUF                          |                8 |             16 |
+|  clk_IBUF_BUFG |                                  |                                   |               14 |             23 |
++----------------+----------------------------------+-----------------------------------+------------------+----------------+
+
+

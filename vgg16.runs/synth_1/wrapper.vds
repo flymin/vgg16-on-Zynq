@@ -1,0 +1,1514 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jan 15 22:28:51 2019
+# Process ID: 31994
+# Current directory: /home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1
+# Command line: vivado -log wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
+# Log file: /home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/wrapper.vds
+# Journal file: /home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source wrapper.tcl -notrace
+Command: synth_design -top wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 32029 
+WARNING: [Synth 8-2611] redeclaration of ansi port waiting_read is not allowed [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/wrapper.v:54]
+WARNING: [Synth 8-2611] redeclaration of ansi port waiting_save is not allowed [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/wrapper.v:54]
+WARNING: [Synth 8-2611] redeclaration of ansi port waiting_weight is not allowed [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/wrapper.v:54]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1456.078 ; gain = 96.355 ; free physical = 71984 ; free virtual = 227055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'in_ram' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:24]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/.Xil/Vivado-31994-eda-srv/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [/home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/.Xil/Vivado-31994-eda-srv/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'in_ram' (2#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:24]
+INFO: [Synth 8-6157] synthesizing module 'out_ram' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:161]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:194]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'out_ram' (3#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:161]
+INFO: [Synth 8-6157] synthesizing module 'in_weight' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:299]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'in_weight' (4#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/data_ram.v:299]
+WARNING: [Synth 8-689] width (15) of port connection 'addrb' does not match port width (17) of module 'blk_mem_gen_0' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/wrapper.v:101]
+INFO: [Synth 8-6157] synthesizing module 'Net' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/Net.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dataloader' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'dataloader' (5#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:24]
+INFO: [Synth 8-6157] synthesizing module 'weightloader' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:23]
+WARNING: [Synth 8-151] case item 4'b0110 is unreachable [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'weightloader' (6#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:23]
+INFO: [Synth 8-6157] synthesizing module 'conv_FSM' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'conv_FSM' (7#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:24]
+INFO: [Synth 8-6157] synthesizing module 'FC_FSM' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/FC_FSM.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/FC_FSM.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'FC_FSM' (8#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/FC_FSM.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ConvKernel' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/imports/new/ConvKernel.v:22]
+	Parameter BITWIDTH bound to: 8 - type: integer 
+	Parameter DATACHANNEL bound to: 16 - type: integer 
+	Parameter FILTERHEIGHT bound to: 3 - type: integer 
+	Parameter FILTERWIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [/home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/.Xil/Vivado-31994-eda-srv/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (9#1) [/home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/.Xil/Vivado-31994-eda-srv/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ConvKernel' (10#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/imports/new/ConvKernel.v:22]
+WARNING: [Synth 8-689] width (8) of port connection 'result' does not match port width (16) of module 'ConvKernel' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/Net.v:192]
+INFO: [Synth 8-6157] synthesizing module 'pool' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:23]
+INFO: [Synth 8-6157] synthesizing module 'max' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/max.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'max' (11#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/max.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'pool' (12#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:23]
+WARNING: [Synth 8-3848] Net times_pool in module/entity Net does not have driver. [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/Net.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Net' (13#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/Net.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper' (14#1) [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/wrapper.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1525.211 ; gain = 165.488 ; free physical = 71971 ; free virtual = 227044
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1525.211 ; gain = 165.488 ; free physical = 71978 ; free virtual = 227050
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1525.211 ; gain = 165.488 ; free physical = 71978 ; free virtual = 227050
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[0].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[0].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[1].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[1].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[2].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[2].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[3].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[3].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[4].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[4].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[5].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[5].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[6].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[6].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[7].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[7].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[8].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[8].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[9].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[9].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[10].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[10].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[11].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[11].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[12].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[12].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[13].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[13].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[14].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[14].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[15].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[15].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[16].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[16].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[17].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[17].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[18].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[18].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[19].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[19].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[20].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[20].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[21].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[21].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[22].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[22].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[23].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[23].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[24].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[24].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[25].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[25].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[26].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[26].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[27].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[27].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[28].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[28].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[29].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[29].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[30].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[30].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[31].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[31].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[32].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[32].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[33].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[33].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[34].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[34].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[35].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[35].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[36].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[36].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[37].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[37].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[38].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[38].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[39].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[39].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[40].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[40].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[41].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[41].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[42].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[42].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[43].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[43].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[44].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[44].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[45].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[45].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[46].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[46].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[47].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[47].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[48].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[48].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[49].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[49].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[50].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[50].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[51].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[51].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[52].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[52].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[53].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[53].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[54].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[54].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[55].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[55].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[56].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[56].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[57].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[57].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[58].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[58].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[59].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[59].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[60].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[60].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[61].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[61].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[62].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[62].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[63].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[63].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[64].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[64].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[65].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[65].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[66].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[66].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[67].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[67].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[68].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[68].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[69].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[69].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[70].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[70].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[71].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[71].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[72].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[72].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[73].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[73].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[74].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[74].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[75].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[75].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[76].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[76].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[77].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[77].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[78].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[78].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[79].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[79].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[80].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[80].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[81].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[81].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[82].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[82].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[83].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[83].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[84].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[84].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[85].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[85].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[86].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[86].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[87].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[87].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[88].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[88].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[89].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[89].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[90].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[90].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[91].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[91].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[92].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[92].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[93].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[93].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[94].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[94].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[95].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[95].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[96].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[96].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[97].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[97].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[98].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[98].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[99].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[99].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[100].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[100].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[101].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[101].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[102].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[102].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[103].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[103].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[104].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[104].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[105].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[105].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[106].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[106].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[107].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[107].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[108].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[108].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[109].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[109].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[110].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[110].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[111].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[111].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[112].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[112].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[113].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[113].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[114].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[114].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[115].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[115].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[116].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[116].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[117].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[117].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[118].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[118].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[119].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[119].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[120].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[120].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[121].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[121].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[122].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[122].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[123].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[123].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[124].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[124].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[125].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[125].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[126].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[126].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[127].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[127].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[128].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[128].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[129].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[129].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[130].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[130].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[131].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[131].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[132].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[132].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[133].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[133].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[134].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[134].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[135].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[135].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[136].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[136].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[137].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[137].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[138].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[138].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[139].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[139].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[140].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[140].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[141].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[141].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[142].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[142].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[143].mult'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'Net/Kernel/genblk1[143].mult'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'in_ram/instance0'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'in_ram/instance0'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'out_ram/instance0'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'out_ram/instance0'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'in_weight/instance0'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'in_weight/instance0'
+Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'instance0'
+Finished Parsing XDC File [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'instance0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1941.188 ; gain = 0.000 ; free physical = 71611 ; free virtual = 226684
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:01:13 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 71779 ; free virtual = 226851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:01:13 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 71779 ; free virtual = 226851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[0].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[100].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[101].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[102].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[103].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[104].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[105].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[106].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[107].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[108].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[109].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[10].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[110].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[111].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[112].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[113].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[114].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[115].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[116].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[117].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[118].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[119].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[11].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[120].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[121].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[122].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[123].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[124].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[125].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[126].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[127].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[128].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[129].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[12].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[130].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[131].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[132].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[133].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[134].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[135].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[136].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[137].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[138].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[139].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[13].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[140].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[141].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[142].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[143].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[14].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[15].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[16].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[17].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[18].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[19].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[1].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[20].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[21].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[22].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[23].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[24].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[25].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[26].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[27].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[28].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[29].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[2].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[30].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[31].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[32].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[33].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[34].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[35].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[36].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[37].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[38].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[39].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[3].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[40].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[41].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[42].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[43].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[44].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[45].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[46].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[47].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[48].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[49].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[4].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[50].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[51].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[52].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[53].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[54].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[55].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[56].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[57].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[58].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[59].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[5].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[60].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[61].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[62].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[63].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[64].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[65].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[66].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[67].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[68].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[69].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[6].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[70].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[71].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[72].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[73].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[74].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[75].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[76].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[77].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[78].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[79].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[7].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[80].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[81].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[82].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[83].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[84].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[85].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[86].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[87].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[88].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[89].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[8].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[90].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[91].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[92].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[93].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[94].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[95].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[96].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[97].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[98].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[99].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Net/Kernel/\genblk1[9].mult . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for in_ram/instance0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for out_ram/instance0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for in_weight/instance0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for instance0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 71781 ; free virtual = 226854
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stage_reg' in module 'in_ram'
+INFO: [Synth 8-5544] ROM "block" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "waiting" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'stage_reg' in module 'out_ram'
+INFO: [Synth 8-5544] ROM "block" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "waiting" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'stage_reg' in module 'in_weight'
+INFO: [Synth 8-5544] ROM "block" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "waiting" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:67]
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "weight_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "stage" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'stage_reg' in module 'FC_FSM'
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE0 |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stage_reg' using encoding 'sequential' in module 'in_ram'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                             0000
+                  iSTATE |                              010 |                             0001
+                 iSTATE0 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stage_reg' using encoding 'one-hot' in module 'out_ram'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE0 |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stage_reg' using encoding 'sequential' in module 'in_weight'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              000 |                             0000
+                  iSTATE |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE3 |                              011 |                             1111
+*
+                 iSTATE0 |                              100 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stage_reg' using encoding 'sequential' in module 'FC_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:19 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 71737 ; free virtual = 226811
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |pool__GB0     |           1|     32776|
+|2     |pool__GB1     |           1|      7692|
+|3     |pool__GB2     |           1|     35915|
+|4     |dataloader    |           1|     19080|
+|5     |Net__GCB1     |           1|     17759|
+|6     |weightloader  |           1|     13593|
+|7     |wrapper__GC0  |           1|       184|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register data_reg [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:61]
+INFO: [Synth 8-3538] Detected potentially large (wide) register weight_reg [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:54]
+INFO: [Synth 8-3538] Detected potentially large (wide) register cache_reg [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:47]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	 145 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 11    
++---Registers : 
+	             3584 Bit    Registers := 1     
+	             1152 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	               22 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 28    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input   3584 Bit        Muxes := 4     
+	   4 Input   3584 Bit        Muxes := 1     
+	   8 Input   3584 Bit        Muxes := 1     
+	   2 Input   1152 Bit        Muxes := 2     
+	   8 Input   1152 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 1     
+	   8 Input     27 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 5     
+	   8 Input     22 Bit        Muxes := 2     
+	   4 Input     22 Bit        Muxes := 2     
+	   5 Input     22 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 149   
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 1     
+	   8 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 23    
+	   8 Input      8 Bit        Muxes := 7     
+	   6 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 21    
+	   6 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 13    
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 93    
+	   8 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register data_reg [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:61]
+INFO: [Synth 8-3538] Detected potentially large (wide) register weight_reg [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:54]
+INFO: [Synth 8-3538] Detected potentially large (wide) register cache_reg [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:47]
+Hierarchical RTL Component report 
+Module dataloader 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	             1152 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   1152 Bit        Muxes := 1     
+	   8 Input   1152 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   8 Input     22 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 1     
+	   8 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 12    
+	   8 Input      8 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 35    
+	   8 Input      1 Bit        Muxes := 12    
+Module weightloader 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	             1152 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1152 Bit        Muxes := 1     
+	   8 Input   1152 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   8 Input     27 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+	   8 Input      1 Bit        Muxes := 7     
+Module max 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module pool 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	             3584 Bit    Registers := 1     
+	               22 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   3584 Bit        Muxes := 4     
+	   4 Input   3584 Bit        Muxes := 1     
+	   8 Input   3584 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   4 Input     22 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 10    
+Module conv_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module FC_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               22 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     22 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 12    
+Module ConvKernel 
+Detailed RTL Component Info : 
++---Adders : 
+	 145 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 145   
+Module Net 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module in_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+Module out_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 4     
+Module in_weight 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design wrapper has port layer_done driven by constant 0
+INFO: [Synth 8-4471] merging register 'channel_count_reg[7:0]' into 'channel_count_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:92]
+INFO: [Synth 8-4471] merging register 'row_count_reg[7:0]' into 'row_count_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:90]
+INFO: [Synth 8-4471] merging register 'row_count_reg[7:0]' into 'row_count_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:90]
+INFO: [Synth 8-4471] merging register 'channel_count_reg[7:0]' into 'channel_count_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:92]
+WARNING: [Synth 8-6014] Unused sequential element channel_count_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:92]
+WARNING: [Synth 8-6014] Unused sequential element row_count_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:90]
+WARNING: [Synth 8-6014] Unused sequential element row_count_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:90]
+WARNING: [Synth 8-6014] Unused sequential element channel_count_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:92]
+INFO: [Synth 8-4471] merging register 'row_reg[7:0]' into 'row_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:89]
+WARNING: [Synth 8-6014] Unused sequential element row_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/pool.v:89]
+DSP Report: Generating DSP Inaddr2, operation Mode is: A2*B.
+DSP Report: register row_reg is absorbed into DSP Inaddr2.
+DSP Report: operator Inaddr2 is absorbed into DSP Inaddr2.
+DSP Report: Generating DSP Inaddr0, operation Mode is: PCIN+A*B.
+DSP Report: operator Inaddr0 is absorbed into DSP Inaddr0.
+DSP Report: operator Inaddr2 is absorbed into DSP Inaddr0.
+DSP Report: Generating DSP Outaddr0, operation Mode is: C+A*B.
+DSP Report: operator Outaddr0 is absorbed into DSP Outaddr0.
+DSP Report: operator Outaddr1 is absorbed into DSP Outaddr0.
+INFO: [Synth 8-3886] merging instance 'row_reg[0]' (FDE) to 'row_reg[1]'
+INFO: [Synth 8-3886] merging instance 'row_reg[1]' (FDE) to 'row_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage_reg[2]' (FDE) to 'stage_reg[3]'
+INFO: [Synth 8-3886] merging instance 'row_reg[2]' (FDE) to 'row_reg[3]'
+INFO: [Synth 8-3886] merging instance 'row_reg[3]' (FDE) to 'row_reg[4]'
+INFO: [Synth 8-3886] merging instance 'row_reg[4]' (FDE) to 'row_reg[5]'
+INFO: [Synth 8-3886] merging instance 'row_reg[5]' (FDE) to 'row_reg[6]'
+INFO: [Synth 8-3886] merging instance 'row_reg[6]' (FDE) to 'row_reg[7]'
+INFO: [Synth 8-4471] merging register 'channel_counter_reg[7:0]' into 'channel_counter_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:77]
+INFO: [Synth 8-4471] merging register 'col_reg[7:0]' into 'col_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:75]
+INFO: [Synth 8-4471] merging register 'row_counter_reg[7:0]' into 'row_counter_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:78]
+INFO: [Synth 8-4471] merging register 'col_counter_reg[7:0]' into 'col_counter_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:79]
+WARNING: [Synth 8-6014] Unused sequential element channel_counter_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:77]
+WARNING: [Synth 8-6014] Unused sequential element col_counter_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:79]
+WARNING: [Synth 8-6014] Unused sequential element col_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:75]
+WARNING: [Synth 8-6014] Unused sequential element row_counter_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/dataloader.v:78]
+DSP Report: Generating DSP data_addr4, operation Mode is: A*B.
+DSP Report: operator data_addr4 is absorbed into DSP data_addr4.
+DSP Report: Generating DSP p_0_out, operation Mode is: C+A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: operator data_addr4 is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: PCIN+(A:0x0):B2+(C:0xffffffffffff).
+DSP Report: register col_counter_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP data_addr6, operation Mode is: A*B.
+DSP Report: operator data_addr6 is absorbed into DSP data_addr6.
+DSP Report: Generating DSP data_addr5, operation Mode is: A*B.
+DSP Report: operator data_addr5 is absorbed into DSP data_addr5.
+DSP Report: Generating DSP p_1_out, operation Mode is: PCIN+A:B+C'.
+DSP Report: register col_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-3886] merging instance 'bias_addr_reg[11]' (FDRE) to 'bias_addr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'bias_addr_reg[12]' (FDRE) to 'bias_addr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'bias_addr_reg[13]' (FDRE) to 'bias_addr_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bias_addr_reg[14] )
+WARNING: [Synth 8-3332] Sequential element (data_reg[1151]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1150]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1149]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1148]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1147]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1146]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1145]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1144]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1143]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1142]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1141]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1140]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1139]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1138]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1137]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1136]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1135]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1134]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1133]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1132]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1131]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1130]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1129]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1128]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1127]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1126]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1125]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1124]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1123]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1122]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1121]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1120]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1119]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1118]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1117]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1116]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1115]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1114]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1113]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1112]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1111]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1110]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1109]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1108]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1107]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1106]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1105]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1104]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1103]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1102]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1101]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1100]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1099]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1098]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1097]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1096]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1095]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1094]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1093]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1092]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1091]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1090]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1089]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1088]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1087]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1086]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1085]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1084]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1083]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1082]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1081]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1080]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1079]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1078]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1077]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1076]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1075]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1074]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1073]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1072]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1071]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1070]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1069]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1068]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1067]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1066]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1065]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1064]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1063]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1062]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1061]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1060]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1059]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1058]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1057]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1056]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1055]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1054]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1053]) is unused and will be removed from module dataloader.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1052]) is unused and will be removed from module dataloader.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'col_counter_reg[2]' (FDE) to 'col_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'col_counter_reg[3]' (FDE) to 'col_counter_reg[4]'
+INFO: [Synth 8-3886] merging instance 'col_counter_reg[4]' (FDE) to 'col_counter_reg[5]'
+INFO: [Synth 8-3886] merging instance 'col_counter_reg[5]' (FDE) to 'col_counter_reg[6]'
+INFO: [Synth 8-3886] merging instance 'col_counter_reg[6]' (FDE) to 'col_counter_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\col_counter_reg[7] )
+INFO: [Synth 8-4471] merging register 'conv_FSM/times_reg[7:0]' into 'conv_FSM/times_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:60]
+INFO: [Synth 8-4471] merging register 'conv_FSM/channel_reg[10:0]' into 'conv_FSM/channel_reg[10:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:54]
+INFO: [Synth 8-4471] merging register 'conv_FSM/pos_reg[15:0]' into 'conv_FSM/pos_reg[15:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:59]
+WARNING: [Synth 8-6014] Unused sequential element conv_FSM/times_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:60]
+WARNING: [Synth 8-6014] Unused sequential element conv_FSM/layer_done_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:58]
+WARNING: [Synth 8-6014] Unused sequential element conv_FSM/loader_mode_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:53]
+WARNING: [Synth 8-6014] Unused sequential element conv_FSM/channel_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:54]
+WARNING: [Synth 8-6014] Unused sequential element FC_FSM/layer_done_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/FC_FSM.v:53]
+WARNING: [Synth 8-6014] Unused sequential element FC_FSM/loader_mode_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/FC_FSM.v:52]
+WARNING: [Synth 8-6014] Unused sequential element conv_FSM/pos_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/conv_FSM.v:59]
+INFO: [Synth 8-5546] ROM "conv_FSM/stage" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP conv_FSM/result_addr_reg, operation Mode is: (C'+A*B2)'.
+DSP Report: register conv_FSM/channel_reg is absorbed into DSP conv_FSM/result_addr_reg.
+DSP Report: register conv_FSM/pos_reg is absorbed into DSP conv_FSM/result_addr_reg.
+DSP Report: register conv_FSM/result_addr_reg is absorbed into DSP conv_FSM/result_addr_reg.
+DSP Report: operator conv_FSM/result_addr0 is absorbed into DSP conv_FSM/result_addr_reg.
+DSP Report: operator conv_FSM/result_addr1 is absorbed into DSP conv_FSM/result_addr_reg.
+INFO: [Synth 8-3886] merging instance 'conv_FSM/stage_reg[3]' (FDRE) to 'conv_FSM/stage_reg[2]'
+INFO: [Synth 8-4471] merging register 'counter_reg[7:0]' into 'counter_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:56]
+INFO: [Synth 8-4471] merging register 'counter_reg[7:0]' into 'counter_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:56]
+INFO: [Synth 8-4471] merging register 'counter_reg[7:0]' into 'counter_reg[7:0]' [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:56]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:56]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:56]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [/home/class18/gaoruiyuan/vgg16/vgg16.srcs/sources_1/new/weightloader.v:56]
+DSP Report: Generating DSP weight_addr2, operation Mode is: (A:0x90)*B.
+DSP Report: operator weight_addr2 is absorbed into DSP weight_addr2.
+DSP Report: Generating DSP weight_addr0, operation Mode is: PCIN+A*B.
+DSP Report: operator weight_addr0 is absorbed into DSP weight_addr0.
+DSP Report: operator weight_addr2 is absorbed into DSP weight_addr0.
+DSP Report: Generating DSP weight_addr1, operation Mode is: A*B.
+DSP Report: operator weight_addr1 is absorbed into DSP weight_addr1.
+DSP Report: Generating DSP weight_addr0, operation Mode is: PCIN+(A:0x0):B+C'.
+DSP Report: register counter_reg is absorbed into DSP weight_addr0.
+DSP Report: operator weight_addr0 is absorbed into DSP weight_addr0.
+DSP Report: Generating DSP weight_addr0, operation Mode is: C'+A*B.
+DSP Report: register counter_reg is absorbed into DSP weight_addr0.
+DSP Report: operator weight_addr0 is absorbed into DSP weight_addr0.
+DSP Report: operator weight_addr1 is absorbed into DSP weight_addr0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\weight_addr_reg[26] )
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:03:05 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69624 ; free virtual = 224722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping                        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pool         | A2*B                               | 8      | 8      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|pool         | PCIN+A*B                           | 16     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pool         | C+A*B                              | 15     | 7      | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dataloader   | A*B                                | 22     | 8      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dataloader   | C+A*B                              | 16     | 8      | 22     | -      | 22     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dataloader   | PCIN+(A:0x0):B2+(C:0xffffffffffff) | 30     | 8      | 1      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|dataloader   | A*B                                | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dataloader   | A*B                                | 21     | 8      | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dataloader   | PCIN+A:B+C'                        | 4      | 18     | 8      | -      | -1     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
+|Net__GCB1    | (C'+A*B2)'                         | 16     | 11     | 16     | -      | 22     | 0    | 1    | 1    | -    | -     | 0    | 1    | 
+|weightloader | (A:0x90)*B                         | 8      | 8      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|weightloader | PCIN+A*B                           | 16     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|weightloader | A*B                                | 15     | 11     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|weightloader | PCIN+(A:0x0):B+C'                  | 30     | 16     | 8      | -      | -1     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
+|weightloader | C'+A*B                             | 15     | 11     | 8      | -      | 26     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
++-------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |pool__GB0     |           1|     32776|
+|2     |pool__GB1     |           1|     11171|
+|3     |pool__GB2     |           1|      3967|
+|4     |dataloader    |           1|      1655|
+|5     |Net__GCB1     |           1|      9480|
+|6     |weightloader  |           1|       364|
+|7     |wrapper__GC0  |           1|       157|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:03:25 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69407 ; free virtual = 224496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\row_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\col_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/dl /\stage_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\in_weight/block_reg[9] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:03:25 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69381 ; free virtual = 224470
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |pool__GB0     |           1|     32776|
+|2     |pool__GB1     |           1|     11171|
+|3     |pool__GB2     |           1|      3964|
+|4     |dataloader    |           1|      1309|
+|5     |Net__GCB1     |           1|      9480|
+|6     |weightloader  |           1|       350|
+|7     |wrapper__GC0  |           1|       153|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:33 ; elapsed = 00:03:48 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69055 ; free virtual = 224150
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |pool__GB0     |           1|     17873|
+|2     |pool__GB1     |           1|      7309|
+|3     |pool__GB2     |           1|      3563|
+|4     |dataloader    |           1|       620|
+|5     |Net__GCB1     |           1|      3628|
+|6     |weightloader  |           1|         2|
+|7     |wrapper__GC0  |           1|       107|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Net/conv_FSM/stage_reg[2] )
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[0]' (FDE) to 'in_weight/block_reg[1]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[1]' (FDE) to 'in_weight/block_reg[2]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[2]' (FDE) to 'in_weight/block_reg[3]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[3]' (FDE) to 'in_weight/block_reg[4]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[4]' (FDE) to 'in_weight/block_reg[5]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[5]' (FDE) to 'in_weight/block_reg[6]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[6]' (FDE) to 'in_weight/block_reg[7]'
+INFO: [Synth 8-3886] merging instance 'in_weight/block_reg[7]' (FDE) to 'in_weight/block_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\in_weight/block_reg[8] )
+INFO: [Synth 8-3886] merging instance 'in_weight/onboard_reg[2]' (FDSE) to 'in_weight/onboard_reg[0]'
+INFO: [Synth 8-3886] merging instance 'in_weight/onboard_reg[0]' (FDSE) to 'in_weight/onboard_reg[1]'
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \out_ram/instance0  has unconnected pin addrb[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:04:02 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69084 ; free virtual = 224196
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:47 ; elapsed = 00:04:02 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69065 ; free virtual = 224177
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:04:04 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69031 ; free virtual = 224143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:04:05 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69081 ; free virtual = 224192
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:09 ; elapsed = 00:05:25 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69059 ; free virtual = 224186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:09 ; elapsed = 00:05:25 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69046 ; free virtual = 224173
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         4|
+|2     |mult_gen_0    |       144|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_0__1 |     1|
+|3     |blk_mem_gen_0__2 |     1|
+|4     |blk_mem_gen_0__3 |     1|
+|5     |mult_gen_0       |     1|
+|6     |mult_gen_0__1    |     1|
+|7     |mult_gen_0__10   |     1|
+|8     |mult_gen_0__100  |     1|
+|9     |mult_gen_0__101  |     1|
+|10    |mult_gen_0__102  |     1|
+|11    |mult_gen_0__103  |     1|
+|12    |mult_gen_0__104  |     1|
+|13    |mult_gen_0__105  |     1|
+|14    |mult_gen_0__106  |     1|
+|15    |mult_gen_0__107  |     1|
+|16    |mult_gen_0__108  |     1|
+|17    |mult_gen_0__109  |     1|
+|18    |mult_gen_0__11   |     1|
+|19    |mult_gen_0__110  |     1|
+|20    |mult_gen_0__111  |     1|
+|21    |mult_gen_0__112  |     1|
+|22    |mult_gen_0__113  |     1|
+|23    |mult_gen_0__114  |     1|
+|24    |mult_gen_0__115  |     1|
+|25    |mult_gen_0__116  |     1|
+|26    |mult_gen_0__117  |     1|
+|27    |mult_gen_0__118  |     1|
+|28    |mult_gen_0__119  |     1|
+|29    |mult_gen_0__12   |     1|
+|30    |mult_gen_0__120  |     1|
+|31    |mult_gen_0__121  |     1|
+|32    |mult_gen_0__122  |     1|
+|33    |mult_gen_0__123  |     1|
+|34    |mult_gen_0__124  |     1|
+|35    |mult_gen_0__125  |     1|
+|36    |mult_gen_0__126  |     1|
+|37    |mult_gen_0__127  |     1|
+|38    |mult_gen_0__128  |     1|
+|39    |mult_gen_0__129  |     1|
+|40    |mult_gen_0__13   |     1|
+|41    |mult_gen_0__130  |     1|
+|42    |mult_gen_0__131  |     1|
+|43    |mult_gen_0__132  |     1|
+|44    |mult_gen_0__133  |     1|
+|45    |mult_gen_0__134  |     1|
+|46    |mult_gen_0__135  |     1|
+|47    |mult_gen_0__136  |     1|
+|48    |mult_gen_0__137  |     1|
+|49    |mult_gen_0__138  |     1|
+|50    |mult_gen_0__139  |     1|
+|51    |mult_gen_0__14   |     1|
+|52    |mult_gen_0__140  |     1|
+|53    |mult_gen_0__141  |     1|
+|54    |mult_gen_0__142  |     1|
+|55    |mult_gen_0__143  |     1|
+|56    |mult_gen_0__15   |     1|
+|57    |mult_gen_0__16   |     1|
+|58    |mult_gen_0__17   |     1|
+|59    |mult_gen_0__18   |     1|
+|60    |mult_gen_0__19   |     1|
+|61    |mult_gen_0__2    |     1|
+|62    |mult_gen_0__20   |     1|
+|63    |mult_gen_0__21   |     1|
+|64    |mult_gen_0__22   |     1|
+|65    |mult_gen_0__23   |     1|
+|66    |mult_gen_0__24   |     1|
+|67    |mult_gen_0__25   |     1|
+|68    |mult_gen_0__26   |     1|
+|69    |mult_gen_0__27   |     1|
+|70    |mult_gen_0__28   |     1|
+|71    |mult_gen_0__29   |     1|
+|72    |mult_gen_0__3    |     1|
+|73    |mult_gen_0__30   |     1|
+|74    |mult_gen_0__31   |     1|
+|75    |mult_gen_0__32   |     1|
+|76    |mult_gen_0__33   |     1|
+|77    |mult_gen_0__34   |     1|
+|78    |mult_gen_0__35   |     1|
+|79    |mult_gen_0__36   |     1|
+|80    |mult_gen_0__37   |     1|
+|81    |mult_gen_0__38   |     1|
+|82    |mult_gen_0__39   |     1|
+|83    |mult_gen_0__4    |     1|
+|84    |mult_gen_0__40   |     1|
+|85    |mult_gen_0__41   |     1|
+|86    |mult_gen_0__42   |     1|
+|87    |mult_gen_0__43   |     1|
+|88    |mult_gen_0__44   |     1|
+|89    |mult_gen_0__45   |     1|
+|90    |mult_gen_0__46   |     1|
+|91    |mult_gen_0__47   |     1|
+|92    |mult_gen_0__48   |     1|
+|93    |mult_gen_0__49   |     1|
+|94    |mult_gen_0__5    |     1|
+|95    |mult_gen_0__50   |     1|
+|96    |mult_gen_0__51   |     1|
+|97    |mult_gen_0__52   |     1|
+|98    |mult_gen_0__53   |     1|
+|99    |mult_gen_0__54   |     1|
+|100   |mult_gen_0__55   |     1|
+|101   |mult_gen_0__56   |     1|
+|102   |mult_gen_0__57   |     1|
+|103   |mult_gen_0__58   |     1|
+|104   |mult_gen_0__59   |     1|
+|105   |mult_gen_0__6    |     1|
+|106   |mult_gen_0__60   |     1|
+|107   |mult_gen_0__61   |     1|
+|108   |mult_gen_0__62   |     1|
+|109   |mult_gen_0__63   |     1|
+|110   |mult_gen_0__64   |     1|
+|111   |mult_gen_0__65   |     1|
+|112   |mult_gen_0__66   |     1|
+|113   |mult_gen_0__67   |     1|
+|114   |mult_gen_0__68   |     1|
+|115   |mult_gen_0__69   |     1|
+|116   |mult_gen_0__7    |     1|
+|117   |mult_gen_0__70   |     1|
+|118   |mult_gen_0__71   |     1|
+|119   |mult_gen_0__72   |     1|
+|120   |mult_gen_0__73   |     1|
+|121   |mult_gen_0__74   |     1|
+|122   |mult_gen_0__75   |     1|
+|123   |mult_gen_0__76   |     1|
+|124   |mult_gen_0__77   |     1|
+|125   |mult_gen_0__78   |     1|
+|126   |mult_gen_0__79   |     1|
+|127   |mult_gen_0__8    |     1|
+|128   |mult_gen_0__80   |     1|
+|129   |mult_gen_0__81   |     1|
+|130   |mult_gen_0__82   |     1|
+|131   |mult_gen_0__83   |     1|
+|132   |mult_gen_0__84   |     1|
+|133   |mult_gen_0__85   |     1|
+|134   |mult_gen_0__86   |     1|
+|135   |mult_gen_0__87   |     1|
+|136   |mult_gen_0__88   |     1|
+|137   |mult_gen_0__89   |     1|
+|138   |mult_gen_0__9    |     1|
+|139   |mult_gen_0__90   |     1|
+|140   |mult_gen_0__91   |     1|
+|141   |mult_gen_0__92   |     1|
+|142   |mult_gen_0__93   |     1|
+|143   |mult_gen_0__94   |     1|
+|144   |mult_gen_0__95   |     1|
+|145   |mult_gen_0__96   |     1|
+|146   |mult_gen_0__97   |     1|
+|147   |mult_gen_0__98   |     1|
+|148   |mult_gen_0__99   |     1|
+|149   |BUFG             |     1|
+|150   |CARRY4           |   326|
+|151   |DSP48E1          |     4|
+|152   |DSP48E1_1        |     2|
+|153   |DSP48E1_2        |     1|
+|154   |DSP48E1_3        |     1|
+|155   |DSP48E1_4        |     1|
+|156   |DSP48E1_5        |     1|
+|157   |LUT1             |    29|
+|158   |LUT2             |   339|
+|159   |LUT3             |  4226|
+|160   |LUT4             |   901|
+|161   |LUT5             |  7086|
+|162   |LUT6             | 14263|
+|163   |FDRE             |  3827|
+|164   |FDSE             |    12|
+|165   |IBUF             |    73|
+|166   |OBUF             |    24|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-------------+-------------+------+
+|      |Instance     |Module       |Cells |
++------+-------------+-------------+------+
+|1     |top          |             | 33453|
+|2     |  Net        |Net          | 32076|
+|3     |    FC_FSM   |FC_FSM       |   282|
+|4     |    Kernel   |ConvKernel   |  3073|
+|5     |    conv_FSM |conv_FSM     |   267|
+|6     |    dl       |dataloader   |   647|
+|7     |    pool     |pool         | 27805|
+|8     |      max    |max          |     3|
+|9     |    wl       |weightloader |     2|
+|10    |  in_ram     |in_ram       |   837|
+|11    |  in_weight  |in_weight    |    18|
+|12    |  out_ram    |out_ram      |    30|
++------+-------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:09 ; elapsed = 00:05:25 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 69045 ; free virtual = 224172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 17 critical warnings and 283 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:50 ; elapsed = 00:04:39 . Memory (MB): peak = 1947.184 ; gain = 165.488 ; free physical = 71547 ; free virtual = 226675
+Synthesis Optimization Complete : Time (s): cpu = 00:03:10 ; elapsed = 00:05:27 . Memory (MB): peak = 1947.184 ; gain = 587.461 ; free physical = 71551 ; free virtual = 226675
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 409 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'wrapper' is not ideal for floorplanning, since the cellview 'pool' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+152 Infos, 129 Warnings, 17 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:19 ; elapsed = 00:05:36 . Memory (MB): peak = 2003.230 ; gain = 684.973 ; free physical = 71580 ; free virtual = 226704
+INFO: [Common 17-1381] The checkpoint '/home/class18/gaoruiyuan/vgg16/vgg16.runs/synth_1/wrapper.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2033.246 ; gain = 30.016 ; free physical = 71576 ; free virtual = 226703
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_utilization_synth.rpt -pb wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2033.246 ; gain = 0.000 ; free physical = 71573 ; free virtual = 226701
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 15 22:34:51 2019...

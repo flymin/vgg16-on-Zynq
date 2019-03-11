@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jan 15 13:01:49 2019
+# Process ID: 48303
+# Current directory: /home/class18/gaoruiyuan/vgg16/vgg16.runs/blk_mem_gen_1_synth_1
+# Command line: vivado -log blk_mem_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_1.tcl
+# Log file: /home/class18/gaoruiyuan/vgg16/vgg16.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.vds
+# Journal file: /home/class18/gaoruiyuan/vgg16/vgg16.runs/blk_mem_gen_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_1.tcl -notrace

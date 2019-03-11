@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jan 14 09:53:17 2019
+# Process ID: 36208
+# Current directory: /home/class18/gaoruiyuan/vgg16/vgg16.sim/conv_sim/behav/xsim
+# Command line: wbtcv -mode batch -source /home/class18/gaoruiyuan/vgg16/vgg16.sim/conv_sim/behav/xsim/xsim.dir/conv_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/class18/gaoruiyuan/vgg16/vgg16.sim/conv_sim/behav/xsim/webtalk.log
+# Journal file: /home/class18/gaoruiyuan/vgg16/vgg16.sim/conv_sim/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/class18/gaoruiyuan/vgg16/vgg16.sim/conv_sim/behav/xsim/xsim.dir/conv_sim_behav/webtalk/xsim_webtalk.tcl -notrace
